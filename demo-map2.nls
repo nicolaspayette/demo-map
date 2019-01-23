@@ -1,0 +1,16 @@
+to demo-map2
+
+  let xs [0 5 8 3 2 1]
+  let ys [9 4 1 6 7 8]
+
+  ; for loop version:
+  let result []
+  foreach range length xs [ i ->
+    set result lput (item i xs + item i ys) result
+  ]
+  print result
+
+  ; map version:
+  print (map + xs ys)
+
+end

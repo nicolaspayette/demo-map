@@ -1,0 +1,21 @@
+to-report f [ x ]
+  report x + 1
+end
+
+to demo-map
+
+  let xs [0 5 8 3 2 1]
+
+  ; for loop version:
+  let result []
+  foreach xs [ x -> set result lput f x result ]
+  print result
+
+  ; map version:
+  print map f xs
+
+  ; bonus `of` version
+  create-turtles 10
+  print [ f who ] of turtles
+
+end
