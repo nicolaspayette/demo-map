@@ -11,5 +11,5 @@ println(result)
 // Using map:
 println(xs.zip(ys).map { case (x, y) => x + y })
 
-// Using for/yield
+// Using for/yield:
 println(for ((x, y) <- xs.zip(ys)) yield x + y)
